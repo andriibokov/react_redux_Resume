@@ -4,7 +4,7 @@ import { setData } from "./redux/action/dataActions";
 
 import Header from "./components/header/Header";
 import RouterList from "./constants/routers/RouterList";
-import StateData from "./redux/data";
+import { dataLanguages } from "./languages/languages";
 
 const App = () => {
   const data = useSelector((state) => state.allData.data);
@@ -13,10 +13,7 @@ const App = () => {
   const fetchData = async () => {
     dispatch(
       setData(
-        StateData.langwichList[
-          localStorage.getItem("langwich") ||
-          StateData.option.langwichListNames[0]
-        ]
+        dataLanguages()
       )
     );
   }; 

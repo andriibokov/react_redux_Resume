@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Langwich from "../UI/Langwich/Langwich";
 import classNames from "classnames";
 import st from './Header.module.scss';
+import LanguageButtons from "../languageButtons";
 
 const Header = ({ data }) => {
 
@@ -28,7 +28,7 @@ const Header = ({ data }) => {
             </li>
           </ul>
         </nav>
-        <Langwich />
+        <LanguageButtons/>
       </div>
     </header>
   );

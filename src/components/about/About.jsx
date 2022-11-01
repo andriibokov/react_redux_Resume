@@ -2,11 +2,10 @@ import React from "react";
 import st from "./About.module.scss"
 
 const About = ({data}) => {
-  console.log(data);
   return (
     <main className={st.main}>
-      <div className="container">
-        <div>{data?.title}</div>
+      <div className="container my-5">
+        <h2 className="my-3">{data?.title}</h2>
         <div>
           {data?.name?.label}
           {data?.name?.value}
@@ -20,8 +19,25 @@ const About = ({data}) => {
           {data?.married?.value}
         </div>
         <div>
-          {data?.education?.label}
-          {data?.education?.value}
+          <h2 className="my-3">{data?.education?.title}</h2>
+          <ul>
+            {data?.education?.list?.map((item, index) => {
+              return (
+                <li className="my-2" key={index}>
+                  <h3>{item?.label}</h3>
+                  <ul>
+                    {item?.list?.map((el, index) => {
+                      return (
+                        <li className="my-2" key={index}>
+                          {el}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </main>
