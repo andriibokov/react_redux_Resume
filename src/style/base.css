@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  line-height: normal;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  overflow-x: hidden;
+  background: w;
+  height: 100%;
+}
+
+textarea,
+input:matches([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]) {
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  color: black;
+}
+
+textarea {
+  resize: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: black !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 120%;
+}
+
+button {
+  border: none;
+  cursor: hover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a :hover {
+  cursor: hover;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
