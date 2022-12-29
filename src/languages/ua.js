@@ -5,6 +5,7 @@ const ua = {
     about: "Про мене",
     experience: "Досвід",
     skills: "Навички",
+    portfolio: "Портфоліо",
   },
 
   about: {
@@ -92,6 +93,58 @@ const ua = {
     HTML, CSS, SCSS, JS,  jQuery, Vue, BEM, Gulp, Git, VS Code, Gimp, Figma
     `,
     ],
+  },
+  portfolio: {
+    label: {
+      technologies: "Tехнології",
+      tasks: "Завдання",
+    },
+    portfolioList: {
+      tofaDadashev: {
+        title: "tofaDadashev",
+        url: "https://tofa-dadashev.com",
+      },
+      mammolog: {
+        title: "mammolog",
+        url: "https://mammolog.com.ua",
+      },
+      acmd: {
+        title: "acmd",
+        url: "http://acmd.artyshok.studio",
+      },
+      lazersvit: {
+        title: "lazersvit",
+        url: "https://lazersvit.com",
+      },
+      selera: {
+        title: "selera",
+        url: "https://selera.systems",
+      },
+      hypeGeneration: {
+        title: "hypeGeneration",
+        url: "#",
+      },
+      institutven: {
+        title: "institutven",
+        url: "#",
+      },
+      kinoshniki: {
+        title: "kinoshniki",
+        url: "#",
+      },
+      magazinShashlyka: {
+        title: "magazinShashlyka",
+        url: "https://www.magazin-shashlyka.com.ua",
+      },
+      artMarks: {
+        title: "artMarks",
+        url: "https://art-marks.com",
+      },
+      ispace: {
+        title: "ispace",
+        url: "https://ispace.news",
+      },
+    },
   },
 };
 

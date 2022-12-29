@@ -93,7 +93,7 @@ img {
   display: flex;
   flex-direction: column;
   flex: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .container {
@@ -101,4 +101,8 @@ img {
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.nav_link.active {
+  color: #E7445C;
 }

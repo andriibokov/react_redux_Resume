@@ -5,6 +5,7 @@ const ru = {
     about: "Обо мне",
     experience: "Опыт",
     skills: "Навыки",
+    portfolio: "Портфолио",
   },
 
   about: {

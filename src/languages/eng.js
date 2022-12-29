@@ -5,6 +5,7 @@ const eng = {
     about: "About me",
     experience: "Experience",
     skills: "Skills",
+    portfolio: "Portfolios",
   },
 
   about: {

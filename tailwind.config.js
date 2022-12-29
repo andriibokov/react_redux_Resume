@@ -29,6 +29,9 @@ module.exports = {
         900: "#C1BFD0",
       },
     },
+    gridTemplateColumns: {
+      'portfolio1-1': "1fr 1fr",
+    }
   },
   plugins: [],
 };
